@@ -15,29 +15,29 @@
 3. 将 `Keyboard.prefab`(路径为:`/CCKeyboard/Resources/Prefabs/Keyboard`)拖动到你场景中创建的Canvas中。  
 4. 使用方法
 
-##### Step 1: 添加输入监听 
-```
-void OnEnable () {
-  CCKeyboard.Instance ().OnValueChanged += OnValueChanged; 
-}
-```
-##### Step 2: 显示键盘，在需要展示的地方调用
-```
-CCKeyboard.Instance().ShowKeyboard();  
-```
-##### Step 3: 关闭键盘，在需要关闭的地方调用
-```
-CCKeyboard.Instance().HiddenKeyboard(); 
-```
-##### Step 4: 清空当前已输入的字符
-```
-CCKeyboard.Instance().ClearText(); 
-```
-##### Step 5: 取消输入监听
-```
-void OnDisable(){
-  CCKeyboard.Instance ().OnValueChanged -= OnValueChanged; 
-}
+  ##### Step 1: 添加输入监听 
+  ```
+  void OnEnable () {
+    CCKeyboard.Instance ().OnValueChanged += OnValueChanged; 
+  }
+  ```
+  ##### Step 2: 显示键盘，在需要展示的地方调用
+  ```
+  CCKeyboard.Instance().ShowKeyboard();  
+  ```
+  ##### Step 3: 关闭键盘，在需要关闭的地方调用
+  ```
+  CCKeyboard.Instance().HiddenKeyboard(); 
+  ```
+  ##### Step 4: 清空当前已输入的字符
+  ```
+  CCKeyboard.Instance().ClearText(); 
+  ```
+  ##### Step 5: 取消输入监听
+  ```
+  void OnDisable(){
+    CCKeyboard.Instance ().OnValueChanged -= OnValueChanged; 
+  }
 ```
 
 ---
