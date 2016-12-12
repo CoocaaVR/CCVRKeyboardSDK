@@ -45,8 +45,9 @@
 ### 其他事项
 ---
 
-所有的UI元素必须是一个Canvas的子对象。如果场景中还没有Canvas对象，可以使用GameObject->UI->Canvas创建新的Canvas。
-
+1. 所有的UI元素必须是一个Canvas的子对象。如果场景中还没有Canvas对象，可以使用GameObject->UI->Canvas创建新的Canvas。
+2. 如果发现 `Canvas` 的 `Rect Transform` 不可编辑，则将 `Canvas` 组件中的 `Render Mode` 选项更改为 `World Space`。
+  
 ---
 
 **END**
