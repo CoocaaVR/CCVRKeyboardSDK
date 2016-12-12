@@ -12,7 +12,7 @@
 
 1. 在你的项目中，从`Assets -> Import Package -> Custom Package`导入`CoocaaVR_Keyboard_1.0.0.unitypackage`文件。
 2. 此时在Unity中出现对话框，请保留所有复选框，并选择导入。
-3. 将 `Keyboard.prefab`(路径为:`/CCKeyboard/Resources/Prefabs/Keyboard`)拖动到你场景中创建的Canvas中。 *** 注意:所有的UI元素必须是一个Canvas的子对象。如果场景中还没有Canvas对象，可以使用GameObject->UI->Canvas创建新的Canvas。
+3. 将 `Keyboard.prefab`(路径为:`/CCKeyboard/Resources/Prefabs/Keyboard`)拖动到你场景中创建的Canvas中。  
 4. 使用方法
 ##### Step 1: 添加输入监听 
 ```
@@ -41,6 +41,11 @@ void OnDisable(){
 
 ---
 
+### 其他事项
+---
 
+所有的UI元素必须是一个Canvas的子对象。如果场景中还没有Canvas对象，可以使用GameObject->UI->Canvas创建新的Canvas。
+
+---
 
 **END**
