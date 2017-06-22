@@ -25,20 +25,18 @@
 3. 将 `Keyboard.prefab`(路径为:`/Resources/KeyboardPrefabs/`)拖动到你场景中创建的Canvas中。  
 4. 使用方法，在需要使用键盘的脚本中按照以下步骤添加：
 
-  ##### Step 1: 订阅事件
-  ```
-  void OnEnable () 
-  {
-    CCKeyboard.Instance.OnValueChangedEvent += ValueChanged;
-		CCKeyboard.Instance.OnCharkeyClickEvent += CharkeyClick;
-		CCKeyboard.Instance.OnSpaceKeyClickEvent += SpaceKeyClick;
-		CCKeyboard.Instance.OnDeleteKeyClickEvent += DeleteKeyClick; 
-  }
+  ##### Step 1: 订阅事件
   ```
-  ##### Step 2: 取消订阅
-  ```
-  void OnDisable()
-  {
+  void OnEnable () {
+	CCKeyboard.Instance.OnValueChangedEvent += ValueChanged;
+	CCKeyboard.Instance.OnCharkeyClickEvent += CharkeyClick;
+	CCKeyboard.Instance.OnSpaceKeyClickEvent += SpaceKeyClick;
+	CCKeyboard.Instance.OnDeleteKeyClickEvent += DeleteKeyClick; 
+  }
+ ```  
+ ##### Step 2: 取消订阅
+ ```
+  void OnDisable () {
     CCKeyboard.Instance.OnValueChangedEvent -= ValueChanged;
 		CCKeyboard.Instance.OnCharkeyClickEvent -= CharkeyClick;
 		CCKeyboard.Instance.OnSpaceKeyClickEvent -= SpaceKeyClick;
@@ -49,16 +47,19 @@
   ```
   CCKeyboard.Instance().ShowKeyboard();  
   ```
-  ##### Step 4: 隐藏键盘
+  
+  ##### Step 4: 隐藏键盘
   ```
   CCKeyboard.Instance().HiddenKeyboard(); 
   ```
-  ##### Step 5: 清空当前文本
-  ```
+  
+  ##### Step 5: 清空当前文本
+  ```
   CCKeyboard.Instance().ClearText(); 
   ```
-  ##### Step 6: 手动设置键盘文本
-  ```
+  
+  ##### Step 6: 手动设置键盘文本
+  ```
   CCKeyboard.Instance.inputText.Append("Input your text.");
   ```
 
