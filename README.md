@@ -38,9 +38,9 @@
  ```
   void OnDisable () {
     CCKeyboard.Instance.OnValueChangedEvent -= ValueChanged;
-		CCKeyboard.Instance.OnCharkeyClickEvent -= CharkeyClick;
-		CCKeyboard.Instance.OnSpaceKeyClickEvent -= SpaceKeyClick;
-		CCKeyboard.Instance.OnDeleteKeyClickEvent -= DeleteKeyClick; 
+    CCKeyboard.Instance.OnCharkeyClickEvent -= CharkeyClick;
+    CCKeyboard.Instance.OnSpaceKeyClickEvent -= SpaceKeyClick;
+    CCKeyboard.Instance.OnDeleteKeyClickEvent -= DeleteKeyClick; 
   }
   ```
   ##### Step 3: 显示键盘
