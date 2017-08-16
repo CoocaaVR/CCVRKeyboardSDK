@@ -13,7 +13,7 @@
 * 		文本赋值
 * 		CCKeyboard.Instance.inputText.Append();
 * 
-*       ============= 事件订阅 ============
+*       	============= 事件订阅 ============
 * 
 *  		输入文本变化事件
 * 		CCKeyboard.Instance.OnValueChangedEvent += OnValueChangedEvent;
